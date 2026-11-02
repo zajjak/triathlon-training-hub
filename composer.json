@@ -1,0 +1,22 @@
+{
+    "name": "zajjak/triathlon-training-hub",
+    "description": "Triathlon training management web application.",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Controller\\": "src/controllers/",
+            "App\\Repository\\": "src/repositories/",
+            "App\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
