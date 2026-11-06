@@ -25,6 +25,15 @@ $navigation = [
                     <?= $activeNav === $item['key'] ? 'aria-current="page"' : '' ?>
                 ><?= e($item['label']) ?></a>
             <?php endforeach; ?>
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Włącz ciemny motyw"
+                aria-pressed="false"
+                title="Zmień motyw"
+            >
+                <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+            </button>
         </nav>
     </div>
 </header>
